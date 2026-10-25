@@ -1,0 +1,3 @@
+com/example/reminder/dto/ReminderRequest.class
+com/example/reminder/entity/Reminder.class
+com/example/reminder/repository/ReminderRepository.class

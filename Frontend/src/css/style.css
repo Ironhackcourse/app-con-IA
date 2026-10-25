@@ -1,0 +1,150 @@
+:root {
+  --color-primary: #4f46e5;
+  --color-primary-hover: #4338ca;
+  --color-bg: #f3f4f6;
+  --color-surface: #ffffff;
+  --color-text: #111827;
+  --color-text-muted: #6b7280;
+  --color-border: #e5e7eb;
+  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --radius: 12px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.5;
+  padding: 24px;
+}
+
+header {
+  margin-bottom: 32px;
+}
+
+header h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+#reminder-form {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+#reminder-form input,
+#reminder-form select {
+  padding: 10px 14px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  font-size: 1rem;
+  font-family: inherit;
+  background-color: var(--color-surface);
+  color: var(--color-text);
+}
+
+#reminder-form input {
+  flex: 1;
+}
+
+#reminder-form select {
+  width: 170px;
+}
+
+#reminder-form button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: var(--radius);
+  background-color: var(--color-primary);
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+#reminder-form button:hover {
+  background-color: var(--color-primary-hover);
+}
+
+#reminder-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 16px;
+  list-style: none;
+}
+
+.reminder-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 16px;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.reminder-card .title {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.reminder-card .day {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.reminder-card .fecha {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  margin-top: 4px;
+}
+
+#reminder-list .vacio,
+#reminder-list .error {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 24px;
+  color: var(--color-text-muted);
+  font-style: italic;
+}
+
+#reminder-list .error {
+  color: #dc2626;
+}
+
+@media (max-width: 640px) {
+  body {
+    padding: 16px;
+  }
+
+  #reminder-form {
+    flex-direction: column;
+  }
+
+  #reminder-form input,
+  #reminder-form select,
+  #reminder-form button {
+    width: 100%;
+  }
+
+  #reminder-list {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,7 @@
+/home/xavier/Documentos/IronHack/AppRecordatorio/Backend/src/main/java/com/example/reminder/ReminderApplication.java
+/home/xavier/Documentos/IronHack/AppRecordatorio/Backend/src/main/java/com/example/reminder/config/CorsConfig.java
+/home/xavier/Documentos/IronHack/AppRecordatorio/Backend/src/main/java/com/example/reminder/controller/ReminderController.java
+/home/xavier/Documentos/IronHack/AppRecordatorio/Backend/src/main/java/com/example/reminder/dto/ReminderRequest.java
+/home/xavier/Documentos/IronHack/AppRecordatorio/Backend/src/main/java/com/example/reminder/entity/Reminder.java
+/home/xavier/Documentos/IronHack/AppRecordatorio/Backend/src/main/java/com/example/reminder/repository/ReminderRepository.java
+/home/xavier/Documentos/IronHack/AppRecordatorio/Backend/src/main/java/com/example/reminder/service/ReminderService.java
